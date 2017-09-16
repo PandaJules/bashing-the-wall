@@ -11,3 +11,10 @@ echo "Give me a sentence and I will write first 3 words"
 read str
 # TAB is the default delimiter, but to specify it $"\t"
 cut -f1-3 -d" " <<<$str
+
+
+# tr is a translator
+# delete all digits
+tr -d [0-9]
+# supress multiple spaces
+tr -s " "
